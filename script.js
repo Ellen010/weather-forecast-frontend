@@ -1,4 +1,4 @@
-fetch(`weather-forecast-backend-eta.vercel.app/weather`)
+fetch("weather-forecast-backend-eta.vercel.app/weather")
 	.then(response => response.json())
 	.then(data => {
 		if (data.weather) {
@@ -38,7 +38,7 @@ function updateDeleteCityEventListener() {
 document.querySelector('#addCity').addEventListener('click', function () {
 	const cityName = document.querySelector('#cityNameInput').value;
 
-	fetch('weather-forecast-backend-eta.vercel.app/weather', {
+	fetch("weather-forecast-backend-eta.vercel.app/weather", {
 		method: 'POST',
 		headers: { 'Content-Type': 'application/json' },
 		body: JSON.stringify({ cityName }),
