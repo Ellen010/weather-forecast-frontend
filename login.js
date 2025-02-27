@@ -5,7 +5,7 @@ document.querySelector("register").addEventListener("click", function (){
         email:document.querySelector("registerEmail").value,
         password:document.querySelector("registerPassword").value,
     };
-    fetch ("weather-forecast-backend-eta.vercel.app/users/singup", {
+    fetch ("http://weather-forecast-backend-eta.vercel.app/users/singup", {
         method: "POST",
         headers: { "Content-Type": "application/json"},
         body: JSON.strigify (user),
@@ -23,7 +23,7 @@ document.querySelector("register").addEventListener("click", function (){
             email:document.querySelector("connectionEmail").value,
             password:document.querySelector("connectionPassword").value,
         };
-        fetch ("weather-forecast-backend-eta.vercel.app/users/signin", {
+        fetch ("http://weather-forecast-backend-eta.vercel.app/users/signin", {
             method: "POST",
             headers: { "Content-Type": "application/json"},
             body: JSON.strigify (user),
