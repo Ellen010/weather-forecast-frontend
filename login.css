@@ -17,8 +17,9 @@ body {
 }
 
 #logo {
-	width: 100px;
-	margin-right: 65px;
+	width: 120px;
+	height: 80px;
+	margin: 20px 65px 20px 20px ;
 	cursor: pointer;
 }
 
