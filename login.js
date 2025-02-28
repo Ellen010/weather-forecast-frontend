@@ -8,7 +8,7 @@ document.querySelector("#register").addEventListener("click", function (){
     fetch ("http://weather-forecast-backend-eta.vercel.app/users/singup", {
         method: "POST",
         headers: { "Content-Type": "application/json"},
-        body: JSON.strigify (user),
+        body: JSON.stringify (user),
     }).then (response => response.json ())
     .then (data => {
         if (data.result) {
@@ -26,7 +26,7 @@ document.querySelector("#register").addEventListener("click", function (){
         fetch ("http://weather-forecast-backend-eta.vercel.app/users/signin", {
             method: "POST",
             headers: { "Content-Type": "application/json"},
-            body: JSON.strigify (user),
+            body: JSON.stringify (user),
         }).then (response => response.json ())
         .then (data => {
             if (data.result) {
