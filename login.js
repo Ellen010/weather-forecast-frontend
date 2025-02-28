@@ -5,7 +5,7 @@ document.querySelector("#register").addEventListener("click", function (){
         email:document.querySelector("#registerEmail").value,
         password:document.querySelector("#registerPassword").value,
     };
-    fetch ("https://weather-forecast-backend-eta.vercel.app/users/singup", {
+    fetch ("https://weather-forecast-backend-eta.vercel.app/users/signup", {
         method: "POST",
         headers: { "Content-Type": "application/json"},
         body: JSON.stringify (user),
