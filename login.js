@@ -9,6 +9,7 @@ document.querySelector("#register").addEventListener("click", function (){
         method: "POST",
         headers: { "Content-Type": "application/json"},
         body: JSON.stringify (user),
+        mode: "no-cors",
     }).then (response => response.json ())
     .then (data => {
         if (data.result) {
@@ -27,6 +28,7 @@ document.querySelector("#register").addEventListener("click", function (){
             method: "POST",
             headers: { "Content-Type": "application/json"},
             body: JSON.stringify (user),
+            mode: "no-cors",
         }).then (response => response.json ())
         .then (data => {
             if (data.result) {
