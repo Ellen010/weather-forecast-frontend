@@ -1,9 +1,9 @@
 
-document.querySelector("register").addEventListener("click", function (){
+document.querySelector("#register").addEventListener("click", function (){
     const user= {
-        name:document.querySelector("registerName").value,
-        email:document.querySelector("registerEmail").value,
-        password:document.querySelector("registerPassword").value,
+        name:document.querySelector("#registerName").value,
+        email:document.querySelector("#registerEmail").value,
+        password:document.querySelector("#registerPassword").value,
     };
     fetch ("http://weather-forecast-backend-eta.vercel.app/users/singup", {
         method: "POST",
@@ -18,10 +18,10 @@ document.querySelector("register").addEventListener("click", function (){
 });
 
 
-    document.querySelector("connection").addEventListener("click", function (){
+    document.querySelector("#connection").addEventListener("click", function (){
         const user= {
-            email:document.querySelector("connectionEmail").value,
-            password:document.querySelector("connectionPassword").value,
+            email:document.querySelector("#connectionEmail").value,
+            password:document.querySelector("#connectionPassword").value,
         };
         fetch ("http://weather-forecast-backend-eta.vercel.app/users/signin", {
             method: "POST",
